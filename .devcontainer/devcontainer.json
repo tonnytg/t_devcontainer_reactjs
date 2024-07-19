@@ -1,0 +1,21 @@
+{
+  "name": "Node.js & React Development Environment",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "VARIANT": "14" // Versão do Node.js, ajuste conforme necessário
+    }
+  },
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "postCreateCommand": "npm install",
+  "forwardPorts": [
+    3000
+  ],
+  "features": {},
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode"
+  ]
+}
